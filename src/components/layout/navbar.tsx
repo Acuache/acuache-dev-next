@@ -13,7 +13,9 @@ import { cn } from "@/lib/utils";
 const LINKS = [
   { label: "INICIO", to: "#inicio" },
   { label: "PROYECTOS", to: "#proyectos" },
+  { label: "HABILIDADES", to: "#habilidades" },
   { label: "EXPERIENCIA", to: "#experiencia" },
+  { label: "CERTIFICADOS", to: "#certificados" },
   { label: "SOBRE MI", to: "#sobre-mi" },
 ];
 
@@ -33,7 +35,7 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 z-20 w-full p-7 py-4 pb-5 sm:py-3 flex items-center justify-between",
+        "fixed top-0 left-0 z-20 w-full p-7 py-4 pb-5 sm:py-3 flex items-center justify-between transition-colors duration-300 motion-reduce:transition-none",
         scrolled
           ? "bg-[#080808]/85 border-b border-white/10 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.35)]"
           : "bg-transparent border-b border-transparent"
@@ -51,20 +53,22 @@ export function Navbar() {
           ))}
         </a>
 
-        <nav className="hidden md:block">
-          <ul className="flex gap-10">
+        {/* Los seis links no entran antes de lg: piden 707px y el contenedor
+            recién ahí da el ancho. Hasta lg va el menú lateral. */}
+        <nav className="hidden lg:block">
+          <ul className="flex gap-6">
             {LINKS.map((link) => (
-              <li key={link.to} className="w-max text-base">
+              <li key={link.to} className="w-max text-sm">
                 <a href={link.to} className="relative group hover:text-st">
                   <span className="font-heading">{link.label}</span>
-                  <span className="absolute w-0 h-[2px] bottom-0 left-0 group-hover:right-0 group-hover:w-full bg-st" />
+                  <span className="absolute w-0 h-[2px] bottom-0 left-0 group-hover:w-full bg-st transition-all duration-300 ease-out motion-reduce:transition-none" />
                 </a>
               </li>
             ))}
           </ul>
         </nav>
 
-        <nav className="md:hidden">
+        <nav className="lg:hidden">
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger aria-label="Abrir menú de navegación">
               <Menu className="size-8 cursor-pointer" />

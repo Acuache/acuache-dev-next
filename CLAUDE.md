@@ -36,7 +36,7 @@ Esto mantiene `src/data/` libre de imports de assets y permite `placeholder="blu
 
 **`src/data/skills.ts` es la fuente única de habilidades.** Cada `Skill` lleva su icono, colores y los flags `inMarquee` / `inFilters`; de ahí derivan `SKILL_ICONS` (mapa label → icono, usado por cards, filtros y detalle de proyecto), `MARQUEE_SKILLS` y `FILTER_SKILLS`. Los strings de `project.skills[]` deben coincidir exactamente con `Skill.label` o el icono no se resuelve.
 
-Los certificados son la excepción deliberada: usan `certificate-icons.ts` con un `Record<CertificateIcon, SkillIcon>` porque hay temas (Claude Code) que no son habilidades listadas. El `Record` tipado obliga a cubrir todo el union `CertificateIcon` — si agregas un valor al tipo y olvidas el icono, falla el build.
+Los certificados son la excepción deliberada: usan `certificate-icons.ts` con un `Record<CertificateIcon, SkillIcon>` porque un certificado puede tratar un tema que no esté listado como habilidad y ahí `SKILL_ICONS` no lo tendría. El `Record` tipado obliga a cubrir todo el union `CertificateIcon` — si agregas un valor al tipo y olvidas el icono, falla el build.
 
 **Los SVG de `src/components/icons/` son componentes React**, no assets. SVGR corre como regla de Turbopack en `next.config.ts` con dos ajustes que no se deben quitar: `removeViewBox: false` (para que escalen con `size-*`) y `prefixIds` (sin él, varios iconos inlineados en la misma página colisionan en sus `url(#id)` y los degradados salen mal). El tipo del import viene de `src/types/svg.d.ts`. Todo icono nuevo se exporta desde `src/components/icons/index.ts`.
 

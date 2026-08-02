@@ -9,17 +9,21 @@ export function SectionAbout() {
       <div className="flex flex-col gap-5 md:flex-row">
         <div className="md:flex-1 md:text-lg flex flex-col gap-2">
           <p>
-            Soy autodidacta y estudio los últimos ciclos de Ingeniería de
-            Sistemas. Estoy construyendo mi camino en el desarrollo frontend,
-            avanzando proyecto a proyecto, aprendiendo nuevas herramientas y
-            refinando mi forma de trabajar. Me interesa unir diseño, UX/UI y
-            código para crear experiencias claras y cuidadas.
+            Soy autodidacta y estoy en los últimos ciclos de Ingeniería de
+            Sistemas. Me dedico al frontend porque es donde el diseño y el
+            código se juntan: me importa que una interfaz se vea bien, pero
+            sobre todo que se entienda y no le estorbe a quien la usa.
           </p>
           <p>
-            Estoy dando mis primeros pasos como freelancer, con una mentalidad
-            enfocada en aprender y mejorar cada día. Me gusta asumir pequeños
-            retos que impulsen mi crecimiento y me permitan fortalecer mi forma
-            de trabajar como desarrollador.
+            En el último año le he metido bastante IA a mi forma de trabajar.
+            Uso distintas herramientas según lo que necesite, y lo que más me ha
+            servido es aprender a dar buen contexto y dejar la especificación
+            clara antes de codear. Lo que se genera lo leo y lo corrijo igual
+            que si lo hubiera escrito yo.
+          </p>
+          <p>
+            Estoy empezando como freelance. Por ahora tomo proyectos pequeños,
+            que es donde más aprendo, y de ahí voy subiendo de nivel.
           </p>
         </div>
         <div className="w-full max-w-100 mx-auto md:flex-1">

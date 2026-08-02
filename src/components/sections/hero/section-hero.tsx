@@ -18,12 +18,11 @@ export function SectionHero() {
           </h1>
           <span className="text-xl xs:text-2xl">Desarrollador Web</span>
           <p className="text-sm text-balance xs:text-base">
-            Soy estudiante de Ingeniería de Sistemas y actualmente estoy
-            profundizando en el desarrollo web con Next.js. Me interesa crear
-            productos digitales bien diseñados, funcionales y centrados en el
-            usuario. Me caracterizo por cuidar tanto la experiencia como la
-            calidad del código, y por mantener un aprendizaje constante para
-            seguir creciendo profesionalmente.
+            Soy estudiante de Ingeniería de Sistemas y construyo interfaces con
+            React, TypeScript y Next.js. Trabajo con IA como parte del proceso:
+            especifico antes de codear, me apoyo en agentes para lo repetitivo y
+            reviso todo lo que se genera. Me interesa que lo que hago se vea
+            bien, cargue rápido y sea fácil de usar.
           </p>
           <div className="flex gap-4 items-center">
             <a

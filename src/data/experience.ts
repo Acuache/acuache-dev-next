@@ -6,7 +6,7 @@ export const experience = [
     title: "FREELANCER",
     company: "Independiente",
     description:
-      "Desarrollo interfaces modernas y optimizadas para clientes de distintos rubros, aplicando buenas prácticas, diseño modular (Atomic Design) y experiencia en React, TypeScript y Tailwind. Enfocado en rendimiento, SEO y creación de experiencias fluidas.",
+      "Desarrollo interfaces modernas y optimizadas para clientes de distintos rubros, aplicando buenas prácticas, diseño modular (Atomic Design) y experiencia en React, TypeScript, Next.js y Tailwind. Trabajo con IA dentro de mi flujo: especifico antes de codear (spec driven development), me apoyo en agentes para tareas repetitivas y reviso siempre el resultado. Enfocado en rendimiento, SEO y creación de experiencias fluidas.",
   },
   {
     date: "2025",

@@ -16,3 +16,4 @@ export { default as TypeScript } from "./TypeScript.svg";
 export { default as Zod } from "./Zod.svg";
 export { default as Zustand } from "./Zustand.svg";
 export { default as ClaudeCode } from "./ClaudeCode.svg";
+export { default as Nextjs } from "./Nextjs.svg";

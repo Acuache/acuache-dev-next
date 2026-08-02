@@ -26,7 +26,6 @@ export interface Experience {
 }
 
 export type CertificateIcon =
-  | "Astro"
   | "React"
   | "JavaScript"
   | "TailwindCSS"

@@ -4,7 +4,7 @@ import { CardSkill } from "./card-skill";
 
 export function SectionSkills() {
   return (
-    <section id="habilidades">
+    <section id="habilidades" className="scroll-mt-24">
       <Title>Habilidades</Title>
       <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {SKILLS.map((skill) => {

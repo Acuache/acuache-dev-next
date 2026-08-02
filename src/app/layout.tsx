@@ -72,7 +72,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`dark ${nebula.variable} ${montserrat.variable} antialiased`}
+      className={`dark motion-safe:scroll-smooth ${nebula.variable} ${montserrat.variable} antialiased`}
     >
       <body className="max-w-5xl mx-auto p-4 xs:p-6 xl:p-0 overflow-x-hidden">
         <BackgroundArt />

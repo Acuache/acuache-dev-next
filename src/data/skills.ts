@@ -1,12 +1,13 @@
 import type { FC, SVGProps } from "react";
 import {
-  Astroo,
+  ClaudeCode,
   CSS,
   Figma,
   Git,
   Github,
   HTML,
   JavaScript,
+  Nextjs,
   PostgreSQL,
   React as ReactIcon,
   ReactRouter,
@@ -36,12 +37,13 @@ export interface Skill {
 
 export const SKILLS: Skill[] = [
   {
-    label: "Astro",
-    icon: Astroo,
-    color: "rgba(231, 65, 173, 0.1)",
-    borderColor: "rgb(231, 65, 173)",
+    // Sin inFilters: todavía no hay proyectos publicados con Next.js y el
+    // filtro solo mostraría el estado vacío.
+    label: "Next.js",
+    icon: Nextjs,
+    color: "rgba(255, 255, 255, 0.1)",
+    borderColor: "rgb(255, 255, 255)",
     inMarquee: true,
-    inFilters: true,
   },
   {
     label: "React",
@@ -50,6 +52,15 @@ export const SKILLS: Skill[] = [
     borderColor: "rgb(102, 219, 251)",
     inMarquee: true,
     inFilters: true,
+  },
+  {
+    // Igual que Next.js: es parte del flujo de trabajo, no una tecnología con
+    // la que estén construidos los proyectos listados, así que no va a filtros.
+    label: "Claude Code",
+    icon: ClaudeCode,
+    color: "rgba(217, 119, 87, 0.1)",
+    borderColor: "rgb(217, 119, 87)",
+    inMarquee: true,
   },
   {
     label: "Zod",
