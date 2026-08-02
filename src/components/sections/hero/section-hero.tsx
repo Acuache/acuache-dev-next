@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Github, LinkedIn } from "@/components/icons";
+import { ImageDialog } from "@/components/ui/image-dialog";
 import fotoAcuache from "@/assets/images/Acuache.webp";
+import cvAcuache from "@/assets/cv-acuache-yalle.jpg";
 import { SkillsMarquee } from "./skills-marquee";
 
 export function SectionHero() {
@@ -42,16 +44,22 @@ export function SectionHero() {
             >
               <LinkedIn className="size-6" />
             </a>
-            <a
-              href="https://drive.google.com/file/d/1q--lcZl7UIwoSzVv6BZxOTHvKzeN22oi/view?usp=drive_link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block py-2 px-5 relative group transition-colors duration-300 hover:text-st hover:[text-shadow:0_0_8px_var(--color-st)]"
+            <ImageDialog
+              image={cvAcuache}
+              alt="Currículum de Michael Acuache"
+              title="Currículum"
+              description="Michael Acuache · Desarrollador Web"
+              download={{
+                href: "/cv-acuache-yalle.pdf",
+                fileName: "cv-acuache-yalle.pdf",
+              }}
+              triggerLabel="Ver el currículum de Michael Acuache"
+              triggerClassName="block py-2 px-5 relative group cursor-pointer transition-colors duration-300 hover:text-st hover:[text-shadow:0_0_8px_var(--color-st)]"
             >
               <span className="absolute top-0 left-0 w-2 h-2 border-st border-t-2 border-l-2 transition-all duration-300 ease-out motion-reduce:transition-none group-hover:w-full group-hover:h-full" />
               <span className="absolute right-0 bottom-0 w-2 h-2 border-st border-b-2 border-r-2 transition-all duration-300 ease-out motion-reduce:transition-none group-hover:w-full group-hover:h-full" />
               Ver CV
-            </a>
+            </ImageDialog>
           </div>
         </div>
         <div className="max-w-85 mx-auto sm:basis-4/5 md:max-w-100 md:basis-1/2">

@@ -1,5 +1,7 @@
 import { SKILL_ICONS } from "@/data/skills";
 import type { Certificate } from "@/types/project";
+import { ImageDialog } from "@/components/ui/image-dialog";
+import { CERTIFICATE_IMAGES } from "./certificate-images";
 
 interface CertificateItemProps extends Certificate {
   num: number;
@@ -9,11 +11,12 @@ export function CertificateItem({
   title,
   transmitter,
   date,
-  link,
+  image,
   icon,
   num,
 }: CertificateItemProps) {
   const Icon = SKILL_ICONS[icon];
+  const certificateImage = CERTIFICATE_IMAGES[image];
 
   return (
     <article className="relative flex gap-2 items-center border justify-center p-2 max-w-110 w-full h-full md:max-w-200 lg:p-3 mx-auto md:mx-0">
@@ -30,14 +33,23 @@ export function CertificateItem({
           {transmitter}
         </p>
         <p>{date}</p>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-fit relative font-medium transition-colors duration-300 hover:text-st before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-st before:transition-all before:duration-300 before:ease-out motion-reduce:before:transition-none hover:before:w-full"
-        >
-          Ver certificado
-        </a>
+        {certificateImage && (
+          <ImageDialog
+            image={certificateImage}
+            alt={`Certificado de ${title}, emitido por ${transmitter}`}
+            title={title}
+            description={
+              <>
+                <span className="text-st">Emisor: </span>
+                {transmitter} · {date}
+              </>
+            }
+            triggerLabel={`Ver el certificado de ${title}`}
+            triggerClassName="w-fit relative font-medium cursor-pointer transition-colors duration-300 hover:text-st before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-st before:transition-all before:duration-300 before:ease-out motion-reduce:before:transition-none hover:before:w-full"
+          >
+            Ver certificado
+          </ImageDialog>
+        )}
       </div>
     </article>
   );

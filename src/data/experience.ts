@@ -14,6 +14,6 @@ export const experience = [
     company: "Robbuild, Lima – Proyecto contratado",
     description:
       "Desarrollé la plataforma oficial de la organización, integrando un sistema de donaciones con PayPal y partiendo desde prototipos que diseñé en Figma. Implementé animaciones, optimizaciones de carga y una estructura visual coherente enfocada en claridad y confianza. Mantuvimos comunicación constante para alinear requerimientos con la visión de la ONG.",
-    link: "https://drive.google.com/file/d/1YY52pRq_jBOI8rWgzll7nVbI06PxrASS/view?usp=drive_link",
+    certificate: "certificado-robbuild",
   },
 ] satisfies Experience[];

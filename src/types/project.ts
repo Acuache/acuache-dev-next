@@ -21,7 +21,8 @@ export interface Experience {
   title: string;
   company: string;
   description: string;
-  link?: string;
+  /** Clave en EXPERIENCE_IMAGES (nombre del archivo en src/assets/experience) */
+  certificate?: string;
 }
 
 export type CertificateIcon = "Astro" | "React" | "JavaScript" | "TailwindCSS";
@@ -30,6 +31,7 @@ export interface Certificate {
   title: string;
   transmitter: string;
   date: string;
-  link: string;
+  /** Clave en CERTIFICATE_IMAGES (nombre del archivo en src/assets/certificates) */
+  image: string;
   icon: CertificateIcon;
 }

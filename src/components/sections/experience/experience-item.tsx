@@ -1,13 +1,19 @@
 import { ChevronRight } from "lucide-react";
 import type { Experience } from "@/types/project";
+import { ImageDialog } from "@/components/ui/image-dialog";
+import { EXPERIENCE_IMAGES } from "./experience-images";
 
 export function ExperienceItem({
   title,
   company,
   description,
-  link,
+  certificate,
   date,
 }: Experience) {
+  const certificateImage = certificate
+    ? EXPERIENCE_IMAGES[certificate]
+    : undefined;
+
   return (
     <div className="relative mx-12 pb-12 grid md:grid-cols-5 md:gap-10 md:space-x-4">
       <div className="absolute left-[-35px] block h-full w-0 border-l-2 border-white/15" />
@@ -32,17 +38,18 @@ export function ExperienceItem({
       </div>
       <div className="relative flex flex-col gap-2 pb-4 text-gray-300 md:col-span-3">
         {description}
-        {link && (
-          <a
-            href={link}
-            className="group flex gap-2 w-fit items-center hover:text-st"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Saber más sobre ${title} (se abre en una pestaña nueva)`}
+        {certificateImage && (
+          <ImageDialog
+            image={certificateImage}
+            alt={`Certificado de ${title} — ${company}`}
+            title={title}
+            description={company}
+            triggerLabel={`Ver el certificado de ${title}`}
+            triggerClassName="group flex gap-2 w-fit items-center cursor-pointer transition-colors duration-300 hover:text-st"
           >
             Saber más
-            <ChevronRight className="w-5" />
-          </a>
+            <ChevronRight className="w-5 transition-transform duration-300 ease-out motion-reduce:transition-none group-hover:translate-x-1" />
+          </ImageDialog>
         )}
       </div>
     </div>
