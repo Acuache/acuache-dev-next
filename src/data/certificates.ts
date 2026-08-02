@@ -2,6 +2,20 @@ import type { Certificate } from "@/types/project";
 
 export const certificates = [
   {
+    title: "Claude Code: Guía completa para desarrolladores de software",
+    transmitter: "Fernando Herrera",
+    date: "Julio - 2026",
+    image: "devTalles-claudeCode",
+    icon: "ClaudeCode",
+  },
+  {
+    title: "Vibe Coding: De manera Responsable",
+    transmitter: "Fernando Herrera",
+    date: "Febrero - 2026",
+    image: "devTalles-vibe-coding",
+    icon: "ClaudeCode",
+  },
+  {
     title: "React: de cero a experto",
     transmitter: "Fernando Herrera",
     date: "Febrero - 2026",

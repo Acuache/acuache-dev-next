@@ -25,7 +25,12 @@ export interface Experience {
   certificate?: string;
 }
 
-export type CertificateIcon = "Astro" | "React" | "JavaScript" | "TailwindCSS";
+export type CertificateIcon =
+  | "Astro"
+  | "React"
+  | "JavaScript"
+  | "TailwindCSS"
+  | "ClaudeCode";
 
 export interface Certificate {
   title: string;

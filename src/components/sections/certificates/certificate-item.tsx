@@ -1,6 +1,6 @@
-import { SKILL_ICONS } from "@/data/skills";
 import type { Certificate } from "@/types/project";
 import { ImageDialog } from "@/components/ui/image-dialog";
+import { CERTIFICATE_ICONS } from "./certificate-icons";
 import { CERTIFICATE_IMAGES } from "./certificate-images";
 
 interface CertificateItemProps extends Certificate {
@@ -15,7 +15,7 @@ export function CertificateItem({
   icon,
   num,
 }: CertificateItemProps) {
-  const Icon = SKILL_ICONS[icon];
+  const Icon = CERTIFICATE_ICONS[icon];
   const certificateImage = CERTIFICATE_IMAGES[image];
 
   return (
