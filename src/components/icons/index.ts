@@ -1,4 +1,3 @@
-export { default as Astroo } from "./Astroo.svg";
 export { default as CSS } from "./CSS.svg";
 export { default as Figma } from "./Figma.svg";
 export { default as Git } from "./Git.svg";

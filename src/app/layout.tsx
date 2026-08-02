@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     template: "%s | Acuache",
   },
   description:
-    "Portafolio de Michael Acuache, desarrollador frontend autodidacta en crecimiento, con interés en diseño, UX/UI y la creación de experiencias web modernas y cuidadas.",
+    "Portafolio de Michael Acuache, desarrollador frontend en Ica, Perú. Interfaces con React, TypeScript y Next.js, y sistemas internos con Supabase.",
   authors: [{ name: "Michael Acuache Yalle" }],
   alternates: {
     canonical: "/",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "★ Acuache | Portafolio ★",
     description:
-      "Portafolio de Michael Acuache, desarrollador frontend autodidacta en crecimiento.",
+      "Portafolio de Michael Acuache, desarrollador frontend en Ica, Perú. React, TypeScript, Next.js y Supabase.",
     locale: "es_PE",
     type: "website",
   },
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "★ Acuache | Portafolio ★",
     description:
-      "Portafolio de Michael Acuache, desarrollador frontend autodidacta en crecimiento.",
+      "Portafolio de Michael Acuache, desarrollador frontend en Ica, Perú. React, TypeScript, Next.js y Supabase.",
   },
 };
 

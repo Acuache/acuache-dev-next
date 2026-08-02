@@ -16,14 +16,21 @@ export function SectionAbout() {
           </p>
           <p>
             En el último año le he metido bastante IA a mi forma de trabajar.
-            Uso distintas herramientas según lo que necesite, y lo que más me ha
-            servido es aprender a dar buen contexto y dejar la especificación
-            clara antes de codear. Lo que se genera lo leo y lo corrijo igual
-            que si lo hubiera escrito yo.
+            Trabajo sobre todo con Claude Code: creo mis propios skills,
+            comandos y hooks, y cuando la tarea lo pide levanto varios agentes
+            en paralelo con uno que orquesta y reparte. Pero lo que más me ha
+            servido no es la herramienta sino el hábito: dejar la
+            especificación clara antes de codear y avanzar en pasos chicos,
+            para que cada cambio siga siendo algo que puedo leer y entender.
           </p>
           <p>
-            Estoy empezando como freelance. Por ahora tomo proyectos pequeños,
-            que es donde más aprendo, y de ahí voy subiendo de nivel.
+            Desde mayo de 2026 desarrollo software en la Municipalidad
+            Provincial de Ica, donde hice un sistema de tickets para soporte
+            técnico y un kardex para almacén. Es la primera vez que lo que
+            escribo lo usa gente todos los días, y eso me cambió las
+            prioridades: ahora reviso primero lo que puede romper datos. En
+            paralelo tomo proyectos pequeños como freelance, que es donde más
+            aprendo.
           </p>
         </div>
         <div className="w-full max-w-100 mx-auto md:flex-1">

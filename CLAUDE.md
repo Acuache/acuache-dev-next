@@ -20,7 +20,7 @@ No hay suite de tests ni test runner configurado.
 
 ## Qué es
 
-Portafolio personal estático de Michael Acuache (frontend, Lima). Home de una sola página con secciones (hero, proyectos, habilidades, experiencia, certificados, sobre mí) + páginas de detalle por proyecto en `/proyectos/[id]`, prerenderizadas con `generateStaticParams`. Deploy en Vercel desde `master`.
+Portafolio personal estático de Michael Acuache (frontend, Ica). Home de una sola página con secciones (hero, proyectos, habilidades, experiencia, certificados, sobre mí) + páginas de detalle por proyecto en `/proyectos/[id]`, prerenderizadas con `generateStaticParams`. Deploy en Vercel desde `master`.
 
 ## Arquitectura
 

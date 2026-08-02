@@ -18,10 +18,11 @@ export function SectionHero() {
           </h1>
           <span className="text-xl xs:text-2xl">Desarrollador Web</span>
           <p className="text-sm text-balance xs:text-base">
-            Soy estudiante de Ingeniería de Sistemas y construyo interfaces con
-            React, TypeScript y Next.js. Trabajo con IA como parte del proceso:
-            especifico antes de codear, me apoyo en agentes para lo repetitivo y
-            reviso todo lo que se genera. Me interesa que lo que hago se vea
+            Soy estudiante de Ingeniería de Sistemas y desarrollo sistemas
+            internos para la Municipalidad Provincial de Ica, con React,
+            TypeScript y Next.js. Trabajo con IA como parte del proceso:
+            especifico antes de codear, orquesto agentes para lo repetitivo y
+            valido lo que puede romperse. Me interesa que lo que hago se vea
             bien, cargue rápido y sea fácil de usar.
           </p>
           <div className="flex gap-4 items-center">
