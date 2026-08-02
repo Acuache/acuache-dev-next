@@ -20,12 +20,19 @@ export function ProjectsExplorer() {
       selectedSkills.every((skill) => project.skills.includes(skill))
   );
 
+  // "Destacados" y las tecnologías son excluyentes: elegir uno apaga el otro
   const toggleSkill = (label: string) => {
+    setFeaturedOnly(false);
     setSelectedSkills((prev) =>
       prev.includes(label)
         ? prev.filter((skill) => skill !== label)
         : [...prev, label]
     );
+  };
+
+  const toggleFeatured = () => {
+    setSelectedSkills([]);
+    setFeaturedOnly((prev) => !prev);
   };
 
   return (
@@ -38,7 +45,7 @@ export function ProjectsExplorer() {
         <SkillFilter
           label="Destacados"
           active={featuredOnly}
-          onToggle={() => setFeaturedOnly((prev) => !prev)}
+          onToggle={toggleFeatured}
         >
           <Star className="size-6" />
         </SkillFilter>
