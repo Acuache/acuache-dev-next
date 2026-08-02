@@ -1,0 +1,17 @@
+export { default as Astroo } from "./Astroo.svg";
+export { default as CSS } from "./CSS.svg";
+export { default as Figma } from "./Figma.svg";
+export { default as Git } from "./Git.svg";
+export { default as Github } from "./Github.svg";
+export { default as HTML } from "./HTML.svg";
+export { default as JavaScript } from "./JavaScript.svg";
+export { default as LinkedIn } from "./LinkedIn.svg";
+export { default as PostgreSQL } from "./PostgreSQL.svg";
+export { default as React } from "./React.svg";
+export { default as ReactRouter } from "./ReactRouter.svg";
+export { default as Supabase } from "./Supabase.svg";
+export { default as TailwindCSS } from "./TailwindCSS.svg";
+export { default as TanStack } from "./TanStack.svg";
+export { default as TypeScript } from "./TypeScript.svg";
+export { default as Zod } from "./Zod.svg";
+export { default as Zustand } from "./Zustand.svg";
