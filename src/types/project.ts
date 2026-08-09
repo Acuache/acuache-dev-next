@@ -29,7 +29,8 @@ export type CertificateIcon =
   | "React"
   | "JavaScript"
   | "TailwindCSS"
-  | "ClaudeCode";
+  | "ClaudeCode"
+  | "OpenCode";
 
 export interface Certificate {
   title: string;

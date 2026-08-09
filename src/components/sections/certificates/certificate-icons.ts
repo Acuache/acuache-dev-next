@@ -1,6 +1,7 @@
 import {
   ClaudeCode,
   JavaScript,
+  OpenCode,
   React as ReactIcon,
   TailwindCSS,
 } from "@/components/icons";
@@ -19,6 +20,7 @@ import type { CertificateIcon } from "@/types/project";
 export const CERTIFICATE_ICONS: Record<CertificateIcon, SkillIcon> = {
   ClaudeCode: ClaudeCode,
   JavaScript: JavaScript,
+  OpenCode: OpenCode,
   React: ReactIcon,
   TailwindCSS: TailwindCSS,
 };

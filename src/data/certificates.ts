@@ -2,6 +2,13 @@ import type { Certificate } from "@/types/project";
 
 export const certificates = [
   {
+    title: "OpenCode: Guía completa para desarrolladores de software",
+    transmitter: "Fernando Herrera",
+    date: "Agosto - 2026",
+    image: "devTalles-openCode",
+    icon: "OpenCode",
+  },
+  {
     title: "Claude Code: Guía completa para desarrolladores de software",
     transmitter: "Fernando Herrera",
     date: "Julio - 2026",
